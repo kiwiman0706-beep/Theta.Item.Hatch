@@ -1,0 +1,5 @@
+.gradle/
+local.properties
+**/build/
+# Keep the personal signing key privately for future updates.
+signing/*.jks

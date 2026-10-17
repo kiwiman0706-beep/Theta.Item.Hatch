@@ -1,0 +1,13 @@
+# Local build/runtime state and credentials
+**/.gradle/
+**/build/
+**/local.properties
+**/node_modules/
+**/__pycache__/
+**/*.jks
+**/*.keystore
+**/*.p12
+**/*.pfx
+**/.env
+**/.env.*
+**/signing/

@@ -1,0 +1,61 @@
+{
+  "project": "おもいでクローゼット",
+  "version_name": "1.3.0",
+  "version_code": 4,
+  "handoff_request_date_jst": "2026-10-17",
+  "package": "jp.omoide.closet",
+  "artifacts": [
+    {
+      "filename": "omoide-closet-1.3.0.apk",
+      "library_file_id": "libfile_76c0cc6a63908191af942d0ef6668b78",
+      "version": 3,
+      "size_bytes": 3472845,
+      "sha256": "d9bee7c86e0949c25a8951af5e58b3bab06f4d97d7d791ed694dd34412feac54"
+    },
+    {
+      "filename": "omoide-closet-source-1.3.0.zip",
+      "library_file_id": "libfile_99d070ae93a48191986cb40f027d702c",
+      "version": 3,
+      "size_bytes": 172576,
+      "sha256": "142477c8fd54087a45687c8b53d41531f4852b83ac80a4a14325dee76165a94b"
+    },
+    {
+      "filename": "omoide-closet-sample-album.html",
+      "library_file_id": "libfile_17cc4e1427d8819197f0cd3a5cd404f2",
+      "version": 1,
+      "size_bytes": 124601,
+      "sha256": "45b4786875e60b22062c30476aad5c5d45a04a409817d51fd291b697db33510b"
+    },
+    {
+      "filename": "8268.jpg",
+      "library_file_id": "libfile_4809cd2b58d481919067696824d29ba7",
+      "size_bytes": 539652,
+      "sha256": "87574e51b5f09f563144c26437db3a24d34aa3712863f1ce51b23b49ee973fe2",
+      "role": "user-provided original UI sketch"
+    }
+  ],
+  "source_file_count": 63,
+  "source_modified_for_handoff": false,
+  "apk_rebuilt_for_handoff": false,
+  "signing_private_key_included": false,
+  "personal_app_database_or_photos_included": false,
+  "google_live_connection_verified": false,
+  "gemini_live_classification_verified": false,
+  "historical_tests_documented": {
+    "sync_export": 21,
+    "family_media": 29,
+    "data": 11,
+    "ambient": 19
+  },
+  "note": "Historical test results are from source/omoide-closet/VALIDATION.md. The handoff preparation verifies recovered artifacts and packaging only.",
+  "checks_this_handoff": {
+    "original_source_entries_identical": 63,
+    "apk_source_assets_identical": 15,
+    "javascript_files_syntax_checked": 5,
+    "local_document_links_valid": true,
+    "zip_crc_valid": true,
+    "private_key_files_or_literal_api_keys_found": false,
+    "new_functional_tests_run": false,
+    "new_apk_build_run": false
+  }
+}

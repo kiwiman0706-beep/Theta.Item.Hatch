@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>おもいでクローゼット — Google Drive同期の初回設定</title>
+<style>
+:root{color-scheme:light;--ink:#44382f;--muted:#796d63;--accent:#806047}*{box-sizing:border-box}body{margin:0;background:#faf5ed;color:var(--ink);font:16px/1.85 system-ui,-apple-system,"Noto Sans JP",sans-serif}main{max-width:820px;margin:auto;padding:42px 24px 80px}h1{font-size:clamp(25px,5vw,36px);line-height:1.5;letter-spacing:.03em}h2{font-size:21px;margin:0 0 12px}p{margin:10px 0}a{color:#496e78;text-underline-offset:3px}.tag{color:var(--accent);font-size:13px;letter-spacing:.09em}.lead{font-size:18px}.card{margin:24px 0;padding:26px;background:white;border:1px solid #e7ddcf;border-radius:18px}.step{font-size:12px;font-weight:bold;color:var(--accent);letter-spacing:.08em}.muted,small{color:var(--muted)}ol,ul{padding-left:24px}li{padding:4px 0}code{word-break:break-all;font-size:14px}pre{white-space:pre-wrap;padding:16px;background:#f6f1e9;border-radius:10px;line-height:1.6}button{font:inherit;font-size:13px;border:1px solid #cdbba7;border-radius:8px;color:var(--ink);background:#fff;padding:7px 12px;cursor:pointer}.line{display:flex;gap:12px;align-items:center;justify-content:space-between;margin:14px 0}.line code{flex:1}.line button{flex-shrink:0}hr{border:0;border-top:1px solid #e7ddcf;margin:28px 0}@media(max-width:480px){main{padding:26px 16px 50px}.card{padding:20px}.line{display:block}.line button{margin-top:8px}}@media print{body{background:white}main{padding:0}.card{break-inside:avoid}button{display:none}}
+</style></head><body><main>
+<div class="tag">おもいでクローゼット 1.3.0</div><h1>家族の思い出を、<br>同じDriveフォルダで。</h1>
+<p class="lead">Google接続には、最初にGoogle CloudでこのAPKを登録します。家族で使う場合も、登録は1つのプロジェクトで行えます。</p>
+<p class="muted">GoogleアカウントとGoogle Play開発者サービスが使えるAndroid端末で利用します。初回設定後、アプリの再ビルドやクライアントシークレットの入力は不要です。このAPKのGoogle登録と実際のログイン・Drive通信はまだ実施していません。</p>
+
+<section class="card"><div class="step">01 · Google Cloud</div><h2>プロジェクトとDrive APIを準備</h2>
+<ol><li><a href="https://console.cloud.google.com/" target="_blank" rel="noopener">Google Cloud Console</a>を開き、個人用のプロジェクトを作成・選択します。</li><li>「APIとサービス」→「ライブラリ」で <strong>Google Drive API</strong> を検索し、有効にします。<a href="https://console.cloud.google.com/apis/library/drive.googleapis.com" target="_blank" rel="noopener">Drive APIの画面を開く</a></li></ol></section>
+
+<section class="card"><div class="step">02 · Google Auth Platform</div><h2>自分と家族をテストユーザーに追加</h2>
+<ol><li>「Google Auth Platform」→「ブランディング（Branding）」から設定を開始します。アプリ名は「おもいでクローゼット」、連絡先はご自身のメールアドレスにします。</li><li>対象（Audience）を <strong>外部（External）</strong> にし、公開ステータスは <strong>テスト（Testing）</strong> にします。</li><li>「テストユーザー（Test users）」に、利用するGoogleアカウントをすべて追加します。</li><li>「データアクセス（Data Access）」→「スコープを追加または削除」で、下のDrive権限を登録・保存します。</li></ol>
+<div class="line"><code id="scope">https://www.googleapis.com/auth/drive</code><button data-copy="scope">コピー</button></div>
+<p><strong>Googleの許可画面ではDrive全体へのアクセスになります。</strong>既存・共有フォルダをURLで指定するため、この版では上記の権限を使います。アプリは選択したフォルダ内の同期ファイルを読み書きし、Driveのアカウント情報で接続中のメールアドレスを確認します。</p>
+<p class="muted">個人・家族のテスト利用を想定した版です。一般公開する場合はGoogleの審査や、ファイル選択による権限の限定を含めて別途対応が必要です。</p></section>
+
+<section class="card"><div class="step">03 · Android OAuthクライアント</div><h2>このAPKの署名を登録</h2>
+<p>「クライアント（Clients）」→「クライアントを作成」で、種類を <strong>Android</strong> にします。名前は任意です。パッケージ名とSHA-1に以下を登録します。</p>
+<small>パッケージ名</small><div class="line"><code id="package">jp.omoide.closet</code><button data-copy="package">コピー</button></div>
+<small>配布APKの署名証明書 SHA-1</small><div class="line"><code id="sha">E6:C0:02:3F:71:1E:23:5D:18:97:A5:ED:8E:74:BD:D9:C1:5F:6E:35</code><button data-copy="sha">コピー</button></div>
+<p class="muted">Androidクライアントはパッケージ名と署名でAPKを識別します。作成されたクライアントIDをアプリに入力する欄はありません。ソースから別の署名でビルドした場合は、その署名のSHA-1を追加登録します。上の値は配布用APKの値です。</p></section>
+
+<section class="card"><div class="step">04 · アプリ</div><h2>最初の端末でフォルダを作る</h2>
+<ol><li>APKを上書きで更新し、設定の「Google Driveで思い出を共有」→「Googleに接続する」を押します。</li><li>テストユーザーに登録したGoogleアカウントを選び、Driveへのアクセスを許可します。</li><li>「新しい同期フォルダを作る」を押します。保存済みの写真と記録がアップロードされます。</li><li>表示された「ほかの端末で使うフォルダURL」をコピーします。初回同期が終わってから次の端末をつなぎます。</li></ol></section>
+
+<section class="card"><div class="step">05 · ほかの端末</div><h2>同じフォルダへ接続して統合</h2>
+<p>同じGoogleアカウントを使う端末は、そのまま接続できます。別のGoogleアカウントを使う場合は、Driveでそのフォルダを相手に <strong>編集者</strong> として共有し、そのアカウントもテストユーザーへ追加します。</p>
+<ol><li>もう1台のアプリでも「Googleに接続する」を押します。</li><li>「共有フォルダのURL・ID」に先ほどのURLを貼り付け、「このフォルダを使って統合」を押します。</li><li>この端末に既にある記録も、共有フォルダの記録も両方残して統合します。同じIDの記録を同時に編集した場合は「同時編集の別版」として保存します。</li></ol>
+<p>自動同期は、アプリを開いた時・記録した時・表示中の約5分ごとです。閉じている間の常時同期は行いません。すぐ反映したい時は、両方の端末で「今すぐ同期・統合」を押してください。</p>
+<p class="muted">下書き・Gemini APIキー・Googleアクセストークンは同期しません。別々に撮影・登録した写真は別の記録になります。ごみ箱への移動・復元・お気に入りも同期します。変更履歴と写真をDriveに保存するため、フォルダの中の同期用ファイルを個別に削除しないでください。</p></section>
+
+<section class="card"><h2>HTML付きバックアップの見方</h2>
+<p>設定→「すべての思い出をバックアップ」でZIPを保存します。ZIPを展開し、<strong>closet.html</strong> をブラウザで開きます。</p>
+<ul><li>写真・画面・操作を1つのHTMLに埋め込み、ネット接続なしで閲覧できます。</li><li>上下の独立スワイプ、再生・停止、シャッフル、子供別・お気に入りの絞り込み、検索、思い出の詳細を使えます。</li><li>HTMLは書き出した時点の閲覧用アルバムです。撮影・編集・最新データの同期はAndroidアプリで行います。ごみ箱の品物はHTMLには表示せず、復元用データには含めます。</li><li>Driveのプレビューで動かない場合は、HTMLをダウンロードしてブラウザで開いてください。写真を含むファイルなので、渡す相手を選んで共有してください。</li></ul></section>
+
+<section class="card"><h2>接続できない時</h2><ul><li>「アプリ登録を確認」：Androidクライアントのパッケージ名・SHA-1、Drive APIの有効化、テストユーザーの登録を確認します。</li><li>「権限を確認」：フォルダの共有が「編集者」であること、Driveの空き容量、登録したスコープを確認します。</li><li>「再接続が必要」：アプリの「今すぐ同期・統合」で許可画面を開き直します。Googleのテスト状態では再認可が必要になることがあります。</li><li>通信エラー：写真と記録は端末に残ります。同じフォルダに対して再同期します。</li></ul></section>
+<hr><p class="muted">確認した公式資料（2026年9月30日）</p><p><a href="https://developer.android.com/identity/authorization">AndroidのGoogle認可と署名登録</a> · <a href="https://developers.google.com/workspace/guides/configure-oauth-consent">Google Auth Platformの設定</a> · <a href="https://developers.google.com/workspace/drive/api/guides/api-specific-auth">Drive APIの権限</a></p>
+<div id="copy-status" role="status" aria-live="polite"></div>
+</main><script>document.querySelectorAll('[data-copy]').forEach(b=>b.onclick=async()=>{const text=document.getElementById(b.dataset.copy).textContent;try{await navigator.clipboard.writeText(text);document.getElementById('copy-status').textContent='コピーしました';}catch(e){const t=document.createElement('textarea');t.value=text;document.body.append(t);t.select();document.execCommand('copy');t.remove();document.getElementById('copy-status').textContent='コピーしました';}});</script></body></html>

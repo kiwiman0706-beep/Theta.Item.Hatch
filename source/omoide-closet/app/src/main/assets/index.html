@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#fff9f1"><title>おもいでクローゼット</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div id="app">
+ <header class="topbar"><div class="brand"><span class="brand-icon" id="brand-icon"></span><div>おもいで<small>クローゼット</small></div></div><div class="header-count"><strong id="count-number">0</strong><span>点のたからもの</span></div></header>
+ <main>
+  <section id="closet-page" class="page active">
+   <div class="filters" id="child-filters"></div>
+   <div class="home-cabinet">
+    <div class="outfit-row"><div class="row-heading"><span>トップス <small>左から右へ →</small></span><div class="row-buttons"><button data-step="top:-1" aria-label="前のトップス">‹</button><button data-play="top" aria-label="トップスの再生を切り替え"></button><button data-step="top:1" aria-label="次のトップス">›</button></div></div>
+     <div class="closet mini-closet" id="top-stage"><div class="wood-top"></div><div class="rail"></div><div class="conveyor" id="top-conveyor"></div><div class="closet-empty hidden" id="top-empty"><span>トップスを登録すると並びます</span><small>ワンピース・つなぎもこの段に</small></div></div></div>
+    <div class="outfit-row"><div class="row-heading"><span>ボトムス <small>← 右から左へ</small></span><div class="row-buttons"><button data-step="bottom:-1" aria-label="前のボトムス">‹</button><button data-play="bottom" aria-label="ボトムスの再生を切り替え"></button><button data-step="bottom:1" aria-label="次のボトムス">›</button></div></div>
+     <div class="closet mini-closet" id="bottom-stage"><div class="wood-top"></div><div class="rail"></div><div class="conveyor" id="bottom-conveyor"></div><div class="closet-empty hidden" id="bottom-empty"><span>ボトムスを登録すると並びます</span></div></div></div>
+    <div class="cabinet-footer"><span id="home-hint">上下を別々にスワイプ · タップで思い出</span><button id="shuffle-button" aria-label="並びをシャッフル"></button></div>
+   </div>
+   <div class="keepsake-area">
+    <div class="keepsake-shelf"><div class="keepsake-heading"><span>ちいさなたからもの</span><button id="keepsake-next" aria-label="次の小物・おもちゃ">↻</button></div><div id="keepsake-visual"></div><div id="keepsake-caption"></div></div>
+    <button id="add-closet" class="capture-fab" aria-label="思い出の写真を撮る・選ぶ"><span id="capture-icon"></span><small>写真を残す</small></button>
+   </div>
+   <div class="sample-hint" id="sample-hint"><span>サンプルを展示中</span><button id="sample-add">最初の1点を残す ↗</button></div>
+  </section>
+  <section id="album-page" class="page"><div class="page-title"><div><p class="eyebrow">OUR LITTLE TREASURES</p><h1>思い出のアルバム</h1></div><button class="iconbtn" id="add-album" aria-label="思い出を追加"></button></div><label class="search"><span id="search-icon"></span><input id="search" placeholder="名前・思い出・サイズを検索" autocomplete="off"></label><div class="filters" id="category-filters"></div><div class="album-info" id="album-info"></div><div class="album-grid" id="album-grid"></div></section>
+  <section id="settings-page" class="page"><div class="page-title"><div><p class="eyebrow">MAKE IT YOURS</p><h1>クローゼットの設定</h1></div></div><div id="settings-content"></div></section>
+ </main>
+ <nav class="bottomnav"><button data-tab="closet" class="active"><span class="nav-icon"></span>ホーム</button><button data-tab="album"><span class="nav-icon"></span>検索</button><button data-tab="settings"><span class="nav-icon"></span>設定</button></nav>
+</div>
+<div id="overlay" class="overlay hidden" aria-live="polite"></div>
+<div id="toast" class="toast hidden" role="status"></div>
+<script src="app.js"></script>
+</body></html>

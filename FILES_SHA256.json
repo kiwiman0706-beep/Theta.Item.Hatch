@@ -1,0 +1,409 @@
+{
+  "algorithm": "sha256",
+  "excluded": [
+    "FILES_SHA256.json",
+    "SHA256SUMS.txt"
+  ],
+  "files": [
+    {
+      "path": ".gitignore",
+      "size_bytes": 190,
+      "sha256": "faa03dcdea889e804b2316f69f2c6c3055da1bd752db3210eca0821b321eacb6"
+    },
+    {
+      "path": "BUNDLE_PROVENANCE.json",
+      "size_bytes": 2177,
+      "sha256": "d28935ea82123e80b1430cfc3c9dd5fc6b9bcd3d3948e6cb56402d72eb364388"
+    },
+    {
+      "path": "NEXT_CHAT_PROMPT.md",
+      "size_bytes": 2776,
+      "sha256": "cc498497f64a07f2c5e74e6b7e646d9541536f7b7a636776fa2739e103ba4bca"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 3707,
+      "sha256": "dbddf5741c74c3f2778433ddea3373a0bd89724d1c342010cb2547e55d86eb74"
+    },
+    {
+      "path": "archives/omoide-closet-source-1.3.0.zip",
+      "size_bytes": 172576,
+      "sha256": "142477c8fd54087a45687c8b53d41531f4852b83ac80a4a14325dee76165a94b"
+    },
+    {
+      "path": "docs/01_CONCEPT_AND_REQUIREMENTS.md",
+      "size_bytes": 5751,
+      "sha256": "b9ab8f28c7a94292f672c9ed68da32290767e8d8bc86140a794df61700460c71"
+    },
+    {
+      "path": "docs/02_STATUS_AND_HISTORY.md",
+      "size_bytes": 3387,
+      "sha256": "370117d166b75d14fdcbad5da5d9eda3345c97f444eb2af0128347701a0a89b3"
+    },
+    {
+      "path": "docs/03_ARCHITECTURE_AND_DATA.md",
+      "size_bytes": 7072,
+      "sha256": "6c0609af93863548f27109ea850880ed22b05b94ef849146633269f2d89bf924"
+    },
+    {
+      "path": "docs/04_BUILD_TEST_AND_SIGNING.md",
+      "size_bytes": 6184,
+      "sha256": "d65cbc6e5977f5f9f4666874e6c9b431e4d6de7ccc36e987038e865258aa9a25"
+    },
+    {
+      "path": "docs/05_KNOWN_ISSUES_AND_NEXT_STEPS.md",
+      "size_bytes": 3905,
+      "sha256": "08a642ad7eb3e8e99e5644057a246154f7d3bae6c368acb9085e4054a3e57cd7"
+    },
+    {
+      "path": "docs/06_USER_REQUESTS_TRANSCRIPT.md",
+      "size_bytes": 4112,
+      "sha256": "9310c251836e2e0395372e4b267d44287e9b7793ec80e1102cd9960a87cb995e"
+    },
+    {
+      "path": "docs/07_UI_AND_BEHAVIOR.md",
+      "size_bytes": 2490,
+      "sha256": "15409edb468386533ae8b1631f0d5348c49914d0c5a9b9513a694bea5abd69d3"
+    },
+    {
+      "path": "docs/08_DATA_AND_SIGNING_NOT_INCLUDED.md",
+      "size_bytes": 2414,
+      "sha256": "b83a0e5fab4031ab86091155be7236944b65e9c41434a420f5c0dd2b80ef1562"
+    },
+    {
+      "path": "references/8268.jpg",
+      "size_bytes": 539652,
+      "sha256": "87574e51b5f09f563144c26437db3a24d34aa3712863f1ce51b23b49ee973fe2"
+    },
+    {
+      "path": "releases/omoide-closet-1.3.0.apk",
+      "size_bytes": 3472845,
+      "sha256": "d9bee7c86e0949c25a8951af5e58b3bab06f4d97d7d791ed694dd34412feac54"
+    },
+    {
+      "path": "releases/omoide-closet-sample-album.html",
+      "size_bytes": 124601,
+      "sha256": "45b4786875e60b22062c30476aad5c5d45a04a409817d51fd291b697db33510b"
+    },
+    {
+      "path": "source/omoide-closet/.gitignore",
+      "size_bytes": 112,
+      "sha256": "d04297105b318dfe4062f8e5d1a34d18678f95ddbb4cd85b23691805e4dec1f9"
+    },
+    {
+      "path": "source/omoide-closet/README.md",
+      "size_bytes": 18792,
+      "sha256": "0ad161934cf856dd5e66869f01d10be3a4b28b2cf56ecfe42b58746720307a1b"
+    },
+    {
+      "path": "source/omoide-closet/VALIDATION.md",
+      "size_bytes": 7831,
+      "sha256": "2eb7a0be4de1ff46514c2322efb6e8ccb26081f23a97d88be8c928e243b2751b"
+    },
+    {
+      "path": "source/omoide-closet/app/build.gradle",
+      "size_bytes": 1524,
+      "sha256": "af114a20dcbd3b7c13b3f4ad6d7180ad345a94f5242510a9b1bde02f6e8a3b4c"
+    },
+    {
+      "path": "source/omoide-closet/app/src/androidTest/java/jp/omoide/closet/AmbientChecks.java",
+      "size_bytes": 7978,
+      "sha256": "00195e75bc7f4dbe0743b3b84d10f5a1c5cbeeb5d95509e28c25fb825bd290a7"
+    },
+    {
+      "path": "source/omoide-closet/app/src/androidTest/java/jp/omoide/closet/FamilyChecks.java",
+      "size_bytes": 12875,
+      "sha256": "cd7f6f7b6592276664318d5e4a319b2ea0e041231b239f998cc5f9bb52322fd8"
+    },
+    {
+      "path": "source/omoide-closet/app/src/androidTest/java/jp/omoide/closet/SmokeInstrumentation.java",
+      "size_bytes": 9391,
+      "sha256": "a3b4e6579ebd8b3ecfe805366489562652c5fd121b8f3c1d4f6341cbc150d1c7"
+    },
+    {
+      "path": "source/omoide-closet/app/src/androidTest/java/jp/omoide/closet/SyncChecks.java",
+      "size_bytes": 10315,
+      "sha256": "48be3151e6ccda1f7d51561f46a6912b94a09e0720bf78e0e8c3de75639fbb8c"
+    },
+    {
+      "path": "source/omoide-closet/app/src/main/AndroidManifest.xml",
+      "size_bytes": 2268,
+      "sha256": "6ac72aaaa751af6c2c12ba6aaf19603f7a1be8611b37f33349309f53e8d8cf6e"
+    },
+    {
+      "path": "source/omoide-closet/app/src/main/assets/app.js",
+      "size_bytes": 72384,
+      "sha256": "4478fcb2eecbcd3e0178ce28dc2dbe6ffa201747aefdf8a3564dae4605d8e16a"
+    },
+    {
+      "path": "source/omoide-closet/app/src/main/assets/index.html",
+      "size_bytes": 4106,
+      "sha256": "a8d5545b4556025a08c1f4cda9037b339259698c0e7e265d0156bde416829c23"
+    },
+    {
+      "path": "source/omoide-closet/app/src/main/assets/samples/bear.svg",
+      "size_bytes": 1070,
+      "sha256": "e5cca7e1fe95584b55bf308d1fa84251fa32a09eb8cd5b2cbac60b121752bb1a"
+    },
+    {
+      "path": "source/omoide-closet/app/src/main/assets/samples/bow.svg",
+      "size_bytes": 568,
+      "sha256": "7b72b74ae8611d5ae604a7f0a9cf24f208906bd7078e7dd23e17ac7755cf0d24"
+    },
+    {
+      "path": "source/omoide-closet/app/src/main/assets/samples/cardigan.svg",
+      "size_bytes": 1481,
+      "sha256": "c0f05b99bb6bdb0c5f2c895a7e0cceead62f3f874dd7a8d675619e54d0e23f82"
+    },
+    {
+      "path": "source/omoide-closet/app/src/main/assets/samples/dress.svg",
+      "size_bytes": 1441,
+      "sha256": "973627539f424204944dbb4711950fcdcfcca05d69d845ccadcf10189db58050"
+    },
+    {
+      "path": "source/omoide-closet/app/src/main/assets/samples/family-elder.svg",
+      "size_bytes": 538,
+      "sha256": "a54b8727c61df52193177b62d3a121e11a028017ec58853339efefaf16f897eb"
+    },
+    {
+      "path": "source/omoide-closet/app/src/main/assets/samples/family-younger.svg",
+      "size_bytes": 583,
+      "sha256": "3203531c4085fe0ba92992bd12f580f759d3220ffe506f5b53ef7f36f3dd4e28"
+    },
+    {
+      "path": "source/omoide-closet/app/src/main/assets/samples/memory.svg",
+      "size_bytes": 1495,
+      "sha256": "d4de930a11db35d08e681910ee8a34329ebcacf3a41caca64b8e3f446dbb830e"
+    },
+    {
+      "path": "source/omoide-closet/app/src/main/assets/samples/romper.svg",
+      "size_bytes": 1270,
+      "sha256": "b8a4bc252fdbd667a6499df06fa375b9012e88a3af07e64abe4d7e098813fbe2"
+    },
+    {
+      "path": "source/omoide-closet/app/src/main/assets/samples/skirt.svg",
+      "size_bytes": 1051,
+      "sha256": "dd47accc6bf00e813d95e448cffa4e0d601217f7b8c05d52130cc45fa1e7378d"
+    },
+    {
+      "path": "source/omoide-closet/app/src/main/assets/samples/stripes-back.svg",
+      "size_bytes": 513,
+      "sha256": "8814b49b5ff1a92d2802c595acbf0e42142ae4407e60217ecd51cb4795772039"
+    },
+    {
+      "path": "source/omoide-closet/app/src/main/assets/samples/stripes.svg",
+      "size_bytes": 1248,
+      "sha256": "5bc785faf6f92c324452ba99f7c9aaeea7d76bb3b62df7043ccf84fbf7b19f17"
+    },
+    {
+      "path": "source/omoide-closet/app/src/main/assets/samples/trousers.svg",
+      "size_bytes": 1109,
+      "sha256": "9469ff77d1b4523918fc688d639e90381b72dcf9cedfc894b1bde29d2edd5a7a"
+    },
+    {
+      "path": "source/omoide-closet/app/src/main/assets/style.css",
+      "size_bytes": 28437,
+      "sha256": "1661760c83b783f9fd5cee85af01a4490392a4405ae7d1aaebc714c4f801061f"
+    },
+    {
+      "path": "source/omoide-closet/app/src/main/java/jp/omoide/closet/AlbumBackup.java",
+      "size_bytes": 8064,
+      "sha256": "875be1caa6e2798c1dc2b68e4c41e5448def37cac9a26f09099942d9b392c015"
+    },
+    {
+      "path": "source/omoide-closet/app/src/main/java/jp/omoide/closet/AmbientStore.java",
+      "size_bytes": 2186,
+      "sha256": "6304a148a5e0b8e8e09f5dc9415b24c728b193b7e7fe0c77a70165b72f47e50e"
+    },
+    {
+      "path": "source/omoide-closet/app/src/main/java/jp/omoide/closet/ClosetDreamService.java",
+      "size_bytes": 698,
+      "sha256": "c789d70a5994a4bf14106d2af4305bdbbfd4dcdf32b7ca738cf1a32bb29269a8"
+    },
+    {
+      "path": "source/omoide-closet/app/src/main/java/jp/omoide/closet/DreamPreviewActivity.java",
+      "size_bytes": 708,
+      "sha256": "4d5cecbf41ccdd620af6779813d0ef4b79fde1d04efe838951de65a23683cae7"
+    },
+    {
+      "path": "source/omoide-closet/app/src/main/java/jp/omoide/closet/DriveApi.java",
+      "size_bytes": 4991,
+      "sha256": "65dc5149818b7c09d912a2a259fbb5949e050c1d31363631fb6f2eb3523dc7ef"
+    },
+    {
+      "path": "source/omoide-closet/app/src/main/java/jp/omoide/closet/DriveSync.java",
+      "size_bytes": 7254,
+      "sha256": "556e22ba0f8b24cd3d0ac01241571dbbf190825314814465cb89d14ef2a2fda8"
+    },
+    {
+      "path": "source/omoide-closet/app/src/main/java/jp/omoide/closet/ItemTypes.java",
+      "size_bytes": 2359,
+      "sha256": "692c0f0c5e65eccb97286344490ebae98e1c0f950256ecc8f8a739479fd607f3"
+    },
+    {
+      "path": "source/omoide-closet/app/src/main/java/jp/omoide/closet/MainActivity.java",
+      "size_bytes": 53744,
+      "sha256": "0935f2eb6ba1900c887e6060e747aa55acaf567167a0af945dd412e0864fcfc3"
+    },
+    {
+      "path": "source/omoide-closet/app/src/main/java/jp/omoide/closet/MemoryRenderer.java",
+      "size_bytes": 2200,
+      "sha256": "4b45d4ccac007b5c81a474bc6a17de81410956c403b324c259ae8f1a9a8200d8"
+    },
+    {
+      "path": "source/omoide-closet/app/src/main/java/jp/omoide/closet/MemorySlideView.java",
+      "size_bytes": 4179,
+      "sha256": "b82cadf31a6a33e4e8b86f2a066f4d6382394368b2487cccbb8b76ab3ff2a928"
+    },
+    {
+      "path": "source/omoide-closet/app/src/main/java/jp/omoide/closet/MemoryWidget.java",
+      "size_bytes": 4198,
+      "sha256": "6242bfc7ea40d8c8266f9bab88317eb9de87f2ee1dfdc3dd7d8092116a107511"
+    },
+    {
+      "path": "source/omoide-closet/app/src/main/java/jp/omoide/closet/PortableAlbum.java",
+      "size_bytes": 4672,
+      "sha256": "cef0aa05a5fdab80eae53cd3fee3854028002a3f9a260239b2f655a00aeb5f21"
+    },
+    {
+      "path": "source/omoide-closet/app/src/main/java/jp/omoide/closet/SyncMerge.java",
+      "size_bytes": 8341,
+      "sha256": "742c17f98d501f26f03b4b78c3ff926adcd720867a6a7f746620db9890b3446b"
+    },
+    {
+      "path": "source/omoide-closet/app/src/main/java/jp/omoide/closet/SyncStore.java",
+      "size_bytes": 2907,
+      "sha256": "c8ac3e2617309c2043de80d3fe7e2ebd33dd4f5e5c164969188de01843af72a9"
+    },
+    {
+      "path": "source/omoide-closet/app/src/main/res/anim/widget_fade_in.xml",
+      "size_bytes": 134,
+      "sha256": "9e2cdc2699ae4b1592d32052d1439be61842a112f3a73fec1c737e30e9767332"
+    },
+    {
+      "path": "source/omoide-closet/app/src/main/res/anim/widget_fade_out.xml",
+      "size_bytes": 134,
+      "sha256": "bcd7f08992f6a614223984a5f7566840d394219739e22e0b95839ce0efbf50d1"
+    },
+    {
+      "path": "source/omoide-closet/app/src/main/res/drawable/icon_background.xml",
+      "size_bytes": 108,
+      "sha256": "c088619101f4ee7c3cfeb1817b732a99efcc3a33262e34b74a4c3798f3310998"
+    },
+    {
+      "path": "source/omoide-closet/app/src/main/res/drawable/icon_foreground.xml",
+      "size_bytes": 598,
+      "sha256": "5fbfa04a3ac47abe8f926dc6b86db77214a0e8b4615a89689f7a3bfdfb8c272d"
+    },
+    {
+      "path": "source/omoide-closet/app/src/main/res/drawable/widget_background.xml",
+      "size_bytes": 192,
+      "sha256": "87befb988755b8b13ac5b892ea865be42909eff30bdbd3c3df628a2164744be1"
+    },
+    {
+      "path": "source/omoide-closet/app/src/main/res/layout/memory_widget.xml",
+      "size_bytes": 1690,
+      "sha256": "c75e12f4bb34ade52b122c3ce4c9d124eb72564583d94854cd202288ff008224"
+    },
+    {
+      "path": "source/omoide-closet/app/src/main/res/layout/widget_slide.xml",
+      "size_bytes": 999,
+      "sha256": "d037d07db494d0b4f1e52f8be10bfdf09ed2bacd54d4a5f583620ac26b9e50f0"
+    },
+    {
+      "path": "source/omoide-closet/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+      "size_bytes": 209,
+      "sha256": "2d068fcc2ef62713d379b7bb0bf2c56bfb85e7252da837ca647785d5f50a560f"
+    },
+    {
+      "path": "source/omoide-closet/app/src/main/res/values/strings.xml",
+      "size_bytes": 151,
+      "sha256": "343d3f7fc56f92895d0fd2f8b7599a75377a2dbd1e125a6a6d61d1085041027d"
+    },
+    {
+      "path": "source/omoide-closet/app/src/main/res/values/styles.xml",
+      "size_bytes": 596,
+      "sha256": "418a4f9f769fa8e8a61446f2e6e814c8d949b242631c86c538b162343a572644"
+    },
+    {
+      "path": "source/omoide-closet/app/src/main/res/values-v27/styles.xml",
+      "size_bytes": 134,
+      "sha256": "99f8723abb1e908c7bdc6698b394f00cddff32608ea5ac65e85a90060a4c2ab7"
+    },
+    {
+      "path": "source/omoide-closet/app/src/main/res/xml/file_paths.xml",
+      "size_bytes": 118,
+      "sha256": "367c3b91d228a0ca134c10346f24ac9a416dd64be7fd635a805f0eadb615f970"
+    },
+    {
+      "path": "source/omoide-closet/app/src/main/res/xml/memory_widget_info.xml",
+      "size_bytes": 452,
+      "sha256": "06a4acb5854dd112692c5fe172dcbc5c45b0c79c6c5a28c6f089d0158265cf9f"
+    },
+    {
+      "path": "source/omoide-closet/build.gradle",
+      "size_bytes": 69,
+      "sha256": "8ebf0602839be8fd4c06f07a93e45da6b4a04444fa1b38df8b9def9c1b5c8032"
+    },
+    {
+      "path": "source/omoide-closet/google-drive-setup.html",
+      "size_bytes": 10348,
+      "sha256": "061e372f5087cbabd4fb63d81ee340d83ba8ff36e901ce1d47a624b0777823aa"
+    },
+    {
+      "path": "source/omoide-closet/gradle/wrapper/gradle-wrapper.jar",
+      "size_bytes": 43583,
+      "sha256": "2db75c40782f5e8ba1fc278a5574bab070adccb2d21ca5a6e5ed840888448046"
+    },
+    {
+      "path": "source/omoide-closet/gradle/wrapper/gradle-wrapper.properties",
+      "size_bytes": 253,
+      "sha256": "23b7b98fa7f086c7310fb49d39084bdb472003a03f3b8508b43098f381d53114"
+    },
+    {
+      "path": "source/omoide-closet/gradle.properties",
+      "size_bytes": 109,
+      "sha256": "e6b436ff6a08da8b8c05e0e2fc1a7f40f41701bb506cd80fc2ddfd7b6e3b3b2b"
+    },
+    {
+      "path": "source/omoide-closet/gradlew",
+      "size_bytes": 8762,
+      "sha256": "a3648413b47ef77af21d5ebc36c687c7d103aaef3e17f33de7d4f080a6f300a3"
+    },
+    {
+      "path": "source/omoide-closet/gradlew.bat",
+      "size_bytes": 2966,
+      "sha256": "57931b17dd228e5c24dac90e815d0bf82477e831a4618dfab4136f5446b42a9f"
+    },
+    {
+      "path": "source/omoide-closet/settings.gradle",
+      "size_bytes": 273,
+      "sha256": "1167987fcd30f41c070ba970e303d1a6194359169a08cef88898136de65f4357"
+    },
+    {
+      "path": "source/omoide-closet/tests/family-ui.cjs",
+      "size_bytes": 9218,
+      "sha256": "229c530d3b427f9d272c4a3207eb9265823d047cd7a7fb7f67ab6aea918574ea"
+    },
+    {
+      "path": "source/omoide-closet/tests/portable-family.cjs",
+      "size_bytes": 3236,
+      "sha256": "80cefa9e0579f95bcab28a1d47a8478bbc7d9f231d5c8f7d127aec8da7b2baea"
+    },
+    {
+      "path": "source/omoide-closet/tests/sync-ui.cjs",
+      "size_bytes": 12002,
+      "sha256": "5939527e92b9c53787f222e68cd28e044bda603916af12fdbd9f1300dbcb1a79"
+    },
+    {
+      "path": "source/omoide-closet/tests/ui-smoke.cjs",
+      "size_bytes": 9722,
+      "sha256": "01bc2c93d5c78074526f1f28f16c5706d4576cb0e6dc4581b0f1ebd4cd5f04a1"
+    },
+    {
+      "path": "tools/verify_bundle.py",
+      "size_bytes": 1064,
+      "sha256": "adff94a631e6a78e809fc6c49663092847b3e76fe2f0b6a13abf783af873f71a"
+    }
+  ]
+}
